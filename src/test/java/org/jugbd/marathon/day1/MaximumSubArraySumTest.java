@@ -21,4 +21,11 @@ public class MaximumSubArraySumTest {
                 6,
                 MaximumSubArraySum.findMaxSum(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4}));
     }
+    
+     @Test
+    public void testExampleArray02() throws Exception {
+        assertEquals("Example array should have a max of 9",
+                9,
+                MaximumSubArraySum.findMaxSum(new int[] {4, -2, 6, -10, 8, 1}));
+    }
 }
