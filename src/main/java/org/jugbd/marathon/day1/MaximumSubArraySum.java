@@ -23,19 +23,11 @@ public class MaximumSubArraySum {
 
                     tempSum += arr[j];
 
-                    if (tempSum > maxSum) {
-
-                        maxSum = tempSum;
-                    }
+                    maxSum = tempSum > maxSum ? tempSum : maxSum;
                 }
             }
 
-            if (maxSum > 0) {
-
-                return maxSum;
-            }
-
-            return 0;
+            return maxSum > 0 ? maxSum : 0;
         }
     }
 }
