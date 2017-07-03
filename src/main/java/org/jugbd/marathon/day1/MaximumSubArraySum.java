@@ -8,6 +8,22 @@ public class MaximumSubArraySum {
 
     public static int findMaxSum(int[] arr) {
 
-        return 4;
+		int max_previous=0, max =0;
+		
+		for(int i=0;i<arr.length;i++){
+			max += arr[i];
+			if(max<0){
+				max =0;
+			}
+			
+			else if(max>max_previous){
+				max_previous = max;
+			}
+		}
+		
+		return max_previous;
+		
+       
     }
+	 
 }
