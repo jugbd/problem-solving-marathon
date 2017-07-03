@@ -8,7 +8,7 @@ public class MaximumSubArraySum {
 
     public static int findMaxSum(int[] arr) {
 
-        int max=0;
+                int max=0;
 		int curr_max=0;
 		int n=arr.length;
 		
