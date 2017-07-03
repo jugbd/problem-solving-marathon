@@ -9,6 +9,11 @@ public class MaximumSubArraySum {
 
     public static int findMaxSum(int[] arr) {
 
+        if (arr == null) {
+
+            return 0;
+        }
+        
         if (arr.length == 0) {
 
             return 0;
