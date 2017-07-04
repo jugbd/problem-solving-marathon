@@ -14,7 +14,7 @@ You can help this marathon in multiple ways-
 3. Enrich the test suites
 4. Solve the problem and send a pull request.
 
-End of the marathon we will announce the best contributors and there will be a price for them. 
+End of the marathon we will announce the best contributors and there will be rewards for them. 
 
 # Day # 1
 ## Find the maximum subarray sum
