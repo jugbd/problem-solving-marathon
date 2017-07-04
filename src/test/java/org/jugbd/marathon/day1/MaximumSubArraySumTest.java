@@ -43,4 +43,11 @@ public class MaximumSubArraySumTest {
     public void testZeroArray() throws Exception {
         assertEquals("Example array should have a max of 0", 0, MaximumSubArraySum.findMaxSum(new int[]{0, 0, 0}));
     }
+
+    @Test
+    public void testExampleArray_shouldReturnOne() throws Exception {
+        assertEquals("Example array should have a max of 1",
+                1,
+                MaximumSubArraySum.findMaxSum(new int[]{1, -1, -1}));
+    }
 }
