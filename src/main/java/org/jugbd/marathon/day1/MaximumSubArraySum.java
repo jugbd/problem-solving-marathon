@@ -1,25 +1,16 @@
 package org.jugbd.marathon.day1;
 
-/**
- * @author Bazlur Rahman Rokon
- * @author ashik
- * @since 7/3/17.
- */
 public class MaximumSubArraySum {
 
     public static int findMaxSum(int[] arr) {
+        int max = 0;
+        int currentMax = 0;
 
-        int previousMax = 0, max = 0;
-
-        for (int anArr : arr) {
-            max += anArr;
-            if (max < 0) {
-                max = 0;
-            } else if (max > previousMax) {
-                previousMax = max;
-            }
+        for (int a : arr) {
+            currentMax = Math.max(a, currentMax + a);
+            max = Math.max(currentMax, max);
         }
 
-        return previousMax;
+        return max;
     }
 }
