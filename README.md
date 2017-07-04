@@ -16,5 +16,5 @@ You can help this marathon in multiple ways-
 
 End of the marathon we will announce the best contributors and there will be rewards for them. 
 
-# Day # 1  Find the maximum subarray sum
-# Day # 2  Find the next biggest number with the same digits
+## Day # 1  [Find the maximum subarray sum](https://github.com/jugbd/problem-solving-marathon/blob/master/Day1.md)
+## Day # 2  [Find the next biggest number with the same digits](https://github.com/jugbd/problem-solving-marathon/blob/master/Day2.md)
