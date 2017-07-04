@@ -9,24 +9,17 @@ public class MaximumSubArraySum {
 
     public static int findMaxSum(int[] arr) {
 
-        if (arr != null && arr.length != 0) {
+        int previousMax = 0, max = 0;
 
-            int maxSum = 0;
-
-            for (int i = 0; i < arr.length; i++) {
-
-                int tempSum = arr[i];
-                for (int j = i + 1; j < arr.length; j++) {
-
-                    tempSum += arr[j];
-
-                    maxSum = ((tempSum > maxSum) ? tempSum : maxSum);
-                }
+        for (int anArr : arr) {
+            max += anArr;
+            if (max < 0) {
+                max = 0;
+            } else if (max > previousMax) {
+                previousMax = max;
             }
-
-            return ((maxSum > 0) ? maxSum : 0);
         }
 
-        return 0;
+        return previousMax;
     }
 }
