@@ -1,22 +1,19 @@
 package org.jugbd.marathon.day1;
 
 
-import java.util.Arrays;
 
 public class BiggestNumber {
+	public static long findTheNextBiggerNumber(long n) {
 
-	
-	public static int findTheNextBiggerNumber(int num){
-		
-		int n=String.valueOf(num).length();
+                int n=String.valueOf(num).length();
 		
 		int[] y=new int[n];
 		
-		int temp=num;
+		long temp=num;
 		int i=0;
 		while(temp>0){
 			
-			y[i]=temp%10;
+			y[i]=(int) (temp%10);
 			temp=temp/10;
 			i++;
 		}
@@ -56,7 +53,7 @@ public class BiggestNumber {
 		
 		 temp=smallest1;
 		 arr[i-1]=smallest2;
-		 arr[smlIndex]=temp;
+		 arr[smlIndex]=(int) temp;
 		 
 		
 		
@@ -71,7 +68,4 @@ public class BiggestNumber {
 		 
 		return ans;
 	}
-	
-	
-
 }
