@@ -5,11 +5,11 @@ package org.jugbd.marathon.day1;
 public class BiggestNumber {
 	public static long findTheNextBiggerNumber(long n) {
 
-                int n=String.valueOf(num).length();
+         int length=String.valueOf(n).length();
 		
-		int[] y=new int[n];
+		int[] y=new int[length];
 		
-		long temp=num;
+		long temp=n;
 		int i=0;
 		while(temp>0){
 			
@@ -18,15 +18,15 @@ public class BiggestNumber {
 			i++;
 		}
 		
-		int[] arr=new int[n];
-		for( int m=0,k=n-1;m<n && k>=0;m++,k--){
+		int[] arr=new int[length];
+		for( int m=0,k=length-1;m<n && k>=0;m++,k--){
 			
 			arr[k]=y[m];
 		}
 		
 		
 		
-		for(i=n-1;i>0;i--){
+		for(i=length-1;i>0;i--){
 			
 			if(arr[i]>arr[i-1]){
 				break;
@@ -41,7 +41,7 @@ public class BiggestNumber {
 		int smallest2=arr[i];
 		int smlIndex=i;
 		
-		for(int j=i+1;j<n;j++){
+		for(int j=i+1;j<length;j++){
 			if(arr[j]>smallest1 && arr[j]<smallest2){
 				smallest2=arr[j];
 				smlIndex=j;
@@ -57,11 +57,11 @@ public class BiggestNumber {
 		 
 		
 		
-		Arrays.sort(arr,i,n);
+		Arrays.sort(arr,i,length);
 		
 		
-		 int ans=0;
-		 for(i=0;i<n;i++){
+		 long ans=0;
+		 for(i=0;i<length;i++){
 			 ans=ans*10+arr[i];
 		 }
 		 
