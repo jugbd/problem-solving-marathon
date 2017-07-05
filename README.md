@@ -16,5 +16,8 @@ You can help this marathon in multiple ways-
 
 End of the marathon we will announce the best contributors and there will be rewards for them. 
 
+**_NOTE: for the sake of this marathon, we are not going to reveal the source of the problem now._** 
+
 ## Day # 1  [Find the maximum subarray sum](https://github.com/jugbd/problem-solving-marathon/blob/master/Day1.md)
 ## Day # 2  [Find the next biggest number with the same digits](https://github.com/jugbd/problem-solving-marathon/blob/master/Day2.md)
+## Day # 3  [Trapping Rain Water](https://github.com/jugbd/problem-solving-marathon/blob/master/Day3.md)
