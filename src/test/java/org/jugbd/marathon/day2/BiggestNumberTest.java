@@ -1,8 +1,8 @@
-package org.jugbd.marathon.day1;
+package org.jugbd.marathon.day2;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 
 public class BiggestNumberTest {

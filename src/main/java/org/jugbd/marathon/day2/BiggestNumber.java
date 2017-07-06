@@ -1,4 +1,4 @@
-package org.jugbd.marathon.day1;
+package org.jugbd.marathon.day2;
 
 public class BiggestNumber {
 	public static long findTheNextBiggerNumber(long n) {
