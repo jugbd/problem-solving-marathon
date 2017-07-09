@@ -1,35 +1,31 @@
 package org.jugbd.marathon.day3;
 
-
 public class TrappingTheRainWater {
-    static int findWaterUnit(int[] arr) {
-    	
-    	int unitOfWater = 0, i, j, k;
-		 boolean checked[] = new boolean[arr.length];
-		 
-		 for(i=0;i<arr.length;i++) {
-			 
-			 checked[i] = false;
-		 }
-		 
-		 for(i=0;i<arr.length;i++) {
-			 
-			 if(checked[i] == false) { 
-			 
-				 for(j=i+1;j<arr.length;j++) {
-					 
-					 if(arr[i] <= arr[j] && checked[j] == false) {
-						 
-						 for(k=i+1;k<j;k++) {
-							 
-							 unitOfWater += (arr[i]-arr[k]);
-							 checked[k] = true;
-						 }
-						 break;
-					 }
-				 }
-			 } 
-		 }
-		 return unitOfWater;
-    }
+	static int findWaterUnit(int[] arr) {
+		int unitOfWater = 0;
+		int length = arr.length - 1;
+		int i = 0;
+		while (i < length) {
+			if (arr[i] != 0) {
+				int j = i + 1;
+				int sum = 0;
+				boolean canHold = true;
+				while (arr[i] > arr[j]) {
+					sum += arr[i] - arr[j];
+					if (j == length) {
+						canHold = false;
+						break;
+					}
+					j++;
+				}
+				if (canHold) {
+					unitOfWater += sum;
+					i = j;
+					continue;
+				}
+			}
+			i++;
+		}
+		return unitOfWater;
+	}
 }
