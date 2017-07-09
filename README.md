@@ -21,3 +21,4 @@ End of the marathon we will announce the best contributors and there will be rew
 ## Day # 1  [Find the maximum subarray sum](https://github.com/jugbd/problem-solving-marathon/blob/master/Day1.md)
 ## Day # 2  [Find the next biggest number with the same digits](https://github.com/jugbd/problem-solving-marathon/blob/master/Day2.md)
 ## Day # 3  [Trapping Rain Water](https://github.com/jugbd/problem-solving-marathon/blob/master/Day3.md)
+## Day # 4  [Design an in-memory file system](https://github.com/jugbd/problem-solving-marathon/blob/master/Day4.md)
