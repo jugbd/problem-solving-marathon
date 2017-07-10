@@ -17,5 +17,7 @@ public class BiggestNumberTest {
         assertEquals(-1, BiggestNumber.findTheNextBiggerNumber(111));
         assertEquals(-1, BiggestNumber.findTheNextBiggerNumber(531));
         assertEquals(753772, BiggestNumber.findTheNextBiggerNumber(737752));
+        assertEquals(5499214, BiggestNumber.findTheNextBiggerNumber(5499142));
+        assertEquals(219, BiggestNumber.findTheNextBiggerNumber(192));
     }
 }
