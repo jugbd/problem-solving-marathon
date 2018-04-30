@@ -8,7 +8,7 @@ public class BiggestNumber {
         int ar[] = new int[20]; // long is 64 bit, so max 19 digits can be possible
         int length = 0, tmp;
         boolean found = false;
-        while (n > 0) {
+        while (n != 0) {
 
             ar[length++] = (int) (n % 10);
             n /= 10;
